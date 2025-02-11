@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    
+    <script>
+
+    //void
+    //return
+
+    /*
+    function calculateAreaLand (width , length) {
+
+        //logic
+        let area = width * length
+
+        return area
+
+    }
+
+    let width = prompt('Enter the width of the land in meters')
+    let length = prompt('Enter the length of the land in meters')
+
+    let area = calculateAreaLand(width, length)
+
+    document.write('The land has ' + area + ' meters square')
+    */
+
+    // Flexibility of parameters
+
+    function sum (a, b){
+        //b = b === undefined ? 0 : b
+        return a + b
+    }
+
+    console.log(sum(7,7))
+    console.log(sum(7, 7, 9, 15)) //disregards additional parameters
+    console.log(sum(7))
+    console.log(sum())
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

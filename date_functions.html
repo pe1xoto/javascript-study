@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    
+    <script>
+   
+        //to study latter https://www.w3schools.com/js/js_date_methods.asp
+
+        /*  
+        var date = new Date()
+
+        //document.write(date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear())
+        //dynamic date 23 /01 / 2025
+
+        //day
+        document.write(date.toString())
+        date.setDate(date.getDate() + 7)
+        document.write('<hr/>')
+        document.write(date.toString())
+        document.write('<br/> <br/> <hr/>')
+
+        //month
+        document.write(date.toString())
+        date.setDate(date.getMonth() + -1)
+        document.write('<hr/>')
+        document.write(date.toString())
+        document.write('<br/> <br/> <hr/>')
+
+        //year
+        document.write(date.toString())
+        date.setDate(date.getFullYear() + 3)
+        document.write('<hr/>')
+        document.write(date.toString())
+        
+        */
+
+        //15/01/2025
+        var date1 = new Date(2025, 0, 15)
+
+        //23/01/2025
+        var date2 = new Date(2025, 1, 23)
+
+        document.write(date1.toString())
+        document.write('<hr />')
+        document.write(date2.toString())
+
+        document.write('<br/><br/><hr/>')
+        //convert dates to be able to calculate
+        document.write(date1.getTime())
+        document.write('<hr/>')
+        document.write(date2.toString())
+
+        //January 1, 1970
+
+        document.write('<br/><br/><hr/>')
+        //find the number of milliseconds between date1 and date2
+        var milliseconds_between_dates = Math.abs (date1.getTime() - date2.getTime())
+        document.write(milliseconds_between_dates)
+
+        //1 day has 24 hours, each hour has 60 minutes, 
+        //each minute has 60 seconds and
+        //each second has 1000 milliseconds
+        //so how many milliseconds are there in 1 day?
+        var milliseconds_per_day = (1*24*60*60*1000)
+        document.write('1 day has: ' + (milliseconds_per_day) + 'milliseconds')
+        
+        document.write('<br/><br/><hr/>')
+        document.write('The difference between date 1 and date 2 is ' + Math.ceil(milliseconds_between_dates / milliseconds_per_day) + 'days(s)')
+
+    </script>
+
+</head>
+<body>
+ 
+</body>
+</html>

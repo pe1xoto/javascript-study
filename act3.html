@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    
+    <script>
+
+    //1) Create an application to perform arithmetic addition and subtraction calculations
+
+        var num1 = prompt('Enter a number: ')
+        var operation = prompt('Enter an addition or subtraction operation: ')
+        var num2 = prompt('Enter a second number: ')
+        var result
+        
+        function calc(num1,num2,operation) {
+            
+            num1 = parseFloat(num1)
+            num2 = parseFloat(num2)
+
+            if(operation == 'addition'){
+                result = num1 + num2
+
+            }if(operation == 'subtraction'){
+                result = num1 - num2
+            }
+
+            return result
+        }
+
+        document.write('Result is ' + calc(num1,num2,operation))
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

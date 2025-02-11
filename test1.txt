@@ -1,0 +1,26 @@
+Questions JavaScript
+
+1. JavaScript is a language:
+   ()Compiled
+   (x)Interpreted
+
+2. The "var" instruction is used to:
+   (x)Indicate to the JS interpreter that a new variable is being declared
+   ()Force the variable type
+   ()Assign value to a variable
+
+3. Select which instruction is responsible for generating output in the browser console (browser developer tools)
+   ()alert()
+   ()document.write()
+   (x)console.log()
+
+4. The null value assigned to a variable indicates that:
+   (x)The variable represents the intentional absence of a value
+   ()The variable represents the undefined value
+   ()The variable cannot have its value modified
+
+5. Comments serve, among other things, to: 
+   ()Allows you to capture user text input for use within script logic
+   ()Display custom messages to the user
+   (x)Inclusion of descriptive texts that are ignored by the JS interpreter
+      and help identify programming logic, facilitating future maintenance 

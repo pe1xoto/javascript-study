@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    
+    <script>
+
+        //true && true && false = false
+        //if(2 == 2 && 3 >= 1 && 'a' == 'b') {
+
+        //true || true || false = true
+        //if(2 == 2 || 3 >= 1 || 'a' == 'b') {
+
+        //true = false
+        /*  if(!(5 >= 2)) {
+            document.write('True')
+        } else {
+            document.write('False')
+        }
+        */
+
+        var note = prompt('Enter the student grade: ')
+        var absens = prompt('Enter the number of absens: ')
+
+        var media = 7
+        var absens_max = 15
+
+        /*
+        if (note == media && absens <= absens_max) {
+            document.write('Aproved')
+            //logic
+        }else{ 
+            document.write('Reproved')
+            //logic
+        }
+        */
+
+        //ternary operator
+        var result = (note == media && absens <= absens_max) ? 'Aproved' : 'Reproved'
+        document.write(result)
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
