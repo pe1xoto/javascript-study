@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    
+    <script>
+
+        // to study latter https://www.w3schools.com/jsref/dom_obj_style.asp
+
+        function styleModify(backgroundColor, w, h){
+            
+            document.getElementById('square').style.background = backgroundColor
+            document.getElementById('square').style.width = w
+            document.getElementById('square').style.height = h
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h3>Styles manipulation</h3>
+
+    <button type="button" onclick="styleModify('#FF0000', '200px')">Red</button>
+    <button type="button" onclick="styleModify('#00FF00', '150px', '20px')">Green</button>
+    <button type="button" onclick="styleModify('#0000FF', '150px', '200px')">Blue</button>
+
+    <hr />
+    <div style="border: solid 1px #000; width: 100px; height: 100px;" id="square"></div>
+</body>
+</html>

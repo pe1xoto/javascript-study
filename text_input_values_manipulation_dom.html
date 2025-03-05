@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function distributesCharacter(){
+
+            //select entered value
+            var character = document.getElementById('input').value
+            //clear field
+            document.getElementById('input').value = ''
+
+            //clean up whitespace at the ends of the string
+            character.trim()
+
+            switch(character) {
+                case'0':
+                case'1':
+                case'2':
+                case'3':
+                case'4':
+                case'5':
+                case'6':
+                case'7':
+                case'8':
+                case'9':
+                    //add the character in the number field
+                    document.getElementById('just_numbers').value += character
+                    break;
+                default:
+                    //add the character in the letter field
+                    document.getElementById('just_letters').value += character
+
+            }
+        }
+    </script>
+
+</head>
+
+ <body>
+    
+    <input 
+      type="text" 
+      placeholder="Enter a character" 
+      onkeyup="distributesCharacter()"
+      id="input"
+    />
+    <hr />
+
+    <span>Letters:</span>
+    <input type="text" disabled="disabled" id="just_letters"/>
+
+    <span>Numbers: </span>
+    <input type="text" disabled="disabled" id="just_numbers" />
+
+
+</body>
+</html>
