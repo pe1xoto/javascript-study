@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    
+    <script>
+
+    //1) Create an <input type="text"> field and apply the following controls based on the
+    //events below:
+    //No focus event changes the input background to yellow.
+    //When the field loses focus, recover its corresponding value and:
+    //o If the content contained in the field has less than 3 characters, its
+    //background should be changed to red.
+    //o If the content contained in the field has 3 or more characters, the
+    //background should be changed to green.
+
+        function triggerField(){
+            document.getElementById('field').style.background = "yellow"
+
+        }
+
+        function validateField(){
+            var valueField = document.getElementById('field').value
+
+            if(valueField.lenght < 3){
+                document.getElementById('field').style.background = "red"
+            } else  {
+                document.getElementById('field').style.background = "green"
+
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    <input id = "field" type="text" onfocus="triggerField()" onblur="validateField()" />
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    
+    <script>
+
+        function openPopUp(){
+            windoww = window.open('https://www.twitch.tv/peixotofps', 'new_window', 'width=1920, height=1080')
+        }
+
+        function closePopUp() {
+           windoww.close() 
+        }
+
+    </script>
+
+</head>
+
+<body>
+    
+    <button onclick="openPopUp()">Open Window</button>
+    <button onclick="closePopUp()">Close Window</button>
+    <button onclick="window.print()">Print page</button>
+</body>
+
+</html>

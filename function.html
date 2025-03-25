@@ -30,6 +30,7 @@
 
     // Flexibility of parameters
 
+    /*
     function sum (a, b){
         //b = b === undefined ? 0 : b
         return a + b
@@ -39,6 +40,19 @@
     console.log(sum(7, 7, 9, 15)) //disregards additional parameters
     console.log(sum(7))
     console.log(sum())
+    */
+
+     function sum(){
+        var result = 0
+        for(var i in arguments){
+            result += arguments[i]
+        }
+
+        return result
+     }
+
+     console.log(sum(7,5,1))
+
     </script>
 
 </head>

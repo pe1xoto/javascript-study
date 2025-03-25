@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script>
+        
+
+        //netflix
+        var video = Array()
+
+        video[1] = Array()
+        video[1] ['name'] = 'One Piece'
+        video[1] ['category'] = 'Anime'
+
+        function getVideo(video){
+            
+            try {
+                //logic
+                //http
+                console.log(video[0]['name'])
+
+            } catch(error) {
+                treastError(error);
+                console.log('now we can handle this error')
+                throw new Error('There was an error but dont worry, we are working on it now!!!')
+
+            } finally{
+                console.log('always passes by here (try / catch)');
+            }
+
+            console.log('the application is not dead');
+        }
+
+        function treastError(e) {
+
+            console.log(e)
+        }
+
+        getVideo(video)
+        
+
+    </script>
+</head>
+<body class="bg-dark text-light">
+
+
+</body>
+</html>
